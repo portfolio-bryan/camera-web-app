@@ -1,7 +1,7 @@
-export function Places() {
+export function NotFound() {
   return (
     <div className='bg-red-100'>
-      Places
+      NotFound
     </div>
   )
 }
