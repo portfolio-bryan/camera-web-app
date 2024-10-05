@@ -21,7 +21,7 @@ const Menu = ({ className, isMobile }: MenuProps) => {
 
 export default function Navbar() {
   return (
-    <nav className="flex w-screen justify-between py-4 px-5 h-8 lg:px-64 text-neutral-300">
+    <nav className="flex w-screen justify-between py-4 px-5 h-auto lg:px-64 text-neutral-300">
       <Link to={"/"}>
         <div className="h-full w-auto">
           <img alt="mpb-logo" src={"/mbp-logo-dark.png"} width={60} height={200} />

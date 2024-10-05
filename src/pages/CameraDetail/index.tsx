@@ -10,8 +10,8 @@ export function CameraDetail() {
   // console.log(params)
 
   return (
-    <div className="w-full">
-      <div className="w-full bg-black h-80">
+    <div className="w-full relative">
+      <div className="w-full bg-black h-80 top-0">
 
       </div>
       <div><BulbLight /></div>

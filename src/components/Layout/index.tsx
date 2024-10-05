@@ -1,7 +1,7 @@
 import { Children } from "../../types/children"
 
 function Layout({ children }: Children) {
-  return <div className="flex flex-col items-center mt-20">
+  return <div className="flex flex-col items-center">
     {children}
   </div>
 }
