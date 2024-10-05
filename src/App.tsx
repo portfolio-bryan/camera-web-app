@@ -10,7 +10,8 @@ import './App.css'
 const AppRoutes = () => {
   return useRoutes([
     { path: '/', element: <Cameras /> },
-    { path: '/camera-detail', element: <CameraDetail /> },
+    { path: '/cameras', element: <Cameras /> },
+    { path: '/cameras/:cameraID', element: <CameraDetail /> },
     { path: '/places', element: <Places /> },
     { path: '*', element: <NotFound /> },
   ])

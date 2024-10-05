@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export interface MenuProps {
   className: string | undefined
   isMobile?: boolean
@@ -20,9 +22,11 @@ const Menu = ({ className, isMobile }: MenuProps) => {
 export default function Navbar() {
   return (
     <nav className="flex w-screen justify-between py-4 px-5 h-8 lg:px-64 text-neutral-300">
-      <div className="h-full w-auto">
-        <img alt="mpb-logo" src={"/mbp-logo-dark.png"} width={60} height={200} />
-      </div>
+      <Link to={"/"}>
+        <div className="h-full w-auto">
+          <img alt="mpb-logo" src={"/mbp-logo-dark.png"} width={60} height={200} />
+        </div>
+      </Link>
       <Menu className="hidden sm:flex items-center space-x-5" isMobile={false} />
       <div id="menuToggle" className="sm:hidden space-y-1 z-10">
         <input type="checkbox" className="
