@@ -1,6 +1,7 @@
 export function JoystickControl() {
+  // TODO: second version joystick https://codepen.io/onediv/pen/QWyVzpw
   return (
-    <div className="relative flex justify-center items-center w-44 h-44 border-solid border-opacity-50 rounded-full bg-gradient-to-b from-[#bcbcbc] via-[#7f7f7f]">
+    <div className="relative flex justify-center items-center w-44 h-44 border-solid border-opacity-50 rounded-full bg-gradient-to-b from-[#bcbcbc] via-[#7f7f7f] text-neutral-300 text-opacity-80">
       <div className="flex justify-center items-center w-36 h-36 rounded-full background__radial shadow">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
           className="size-20 opacity-50">
