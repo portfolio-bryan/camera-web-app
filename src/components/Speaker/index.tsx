@@ -1,4 +1,4 @@
-import { ActivatedStyles } from "../AcivatedControlIcon"
+import { ActivatedStyles } from "../ActivatedControlIcon"
 
 export function ActivatedSpeaker(props: ActivatedStyles) {
   return <svg style={props.style} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"

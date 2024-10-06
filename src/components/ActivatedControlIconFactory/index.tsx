@@ -1,4 +1,4 @@
-import { withActivatedControlIcon, ActivatedControlProps } from "../AcivatedControlIcon"
+import { withActivatedControlIcon, ActivatedControlProps } from "../ActivatedControlIcon"
 import { ActivatedBulbLight, DeactivatedBulbLight } from "../BulbLight"
 import { ActivatedSpeaker, DeactivatedSpeaker } from "../Speaker"
 

@@ -1,4 +1,4 @@
-import { ActivatedStyles } from "../AcivatedControlIcon";
+import { ActivatedStyles } from "../ActivatedControlIcon";
 
 export interface ActivatedControlProps {
   isActivated: boolean
