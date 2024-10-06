@@ -22,19 +22,19 @@ export function CameraDetail() {
 
   return (
     <div className="w-full relative">
-      <div className="w-full bg-black h-80 top-0">
-
+      <div className="w-full bg-black h-96 top-0"></div>
+      <div id="control-pane" className="flex relative w-full h-96">
+        <div className="absolute left-6 top-6"><ActivatedControlIconFactory
+          iconType="bulb-light"
+          isActivated={isBulbLightActivated}
+          onClick={onClickHandlerForBulbLight} /></div>
+        <div className="absolute right-6 top-6"><ActivatedControlIconFactory
+          iconType="speaker"
+          isActivated={isSpeakerActivated}
+          onClick={onClickHandlerForSpeaker} /></div>
+        <div className="absolute right-10 top-40"><ZoomControl /></div>
+        <div className="my-32 mx-auto"><JoystickControl /></div>
       </div>
-      <div><ActivatedControlIconFactory
-        iconType="bulb-light"
-        isActivated={isBulbLightActivated}
-        onClick={onClickHandlerForBulbLight} /></div>
-      <div><ActivatedControlIconFactory
-        iconType="speaker"
-        isActivated={isSpeakerActivated}
-        onClick={onClickHandlerForSpeaker} /></div>
-      <div><ZoomControl /></div>
-      <div><JoystickControl /></div>
     </div>
   )
 }

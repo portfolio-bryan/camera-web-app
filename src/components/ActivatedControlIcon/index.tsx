@@ -40,8 +40,8 @@ export function withActivatedControlIcon(
     return (
       <div
         onClick={onClick}
-        className="relative flex justify-center items-center w-14 h-14 border-solid border-opacity-50 rounded-full cursor-pointer">
-        <div className="flex justify-center items-center w-12 h-12 rounded-full bg-gradient-to-br from-[#262626] via-[#bebebe]">
+        className="relative flex justify-center items-center w-24 h-24 border-solid border-opacity-50 rounded-full cursor-pointer">
+        <div className="flex justify-center items-center w-20 h-20 rounded-full bg-gradient-to-br from-[#262626] via-[#818181]">
           <Transition nodeRef={nodeRef} in={isActivated} timeout={duration}>
             {(state: TransitionStatus) => (
               <ActivatedComponent
