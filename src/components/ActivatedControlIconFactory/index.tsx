@@ -1,6 +1,6 @@
-import { withActivatedControlIcon, ActivatedControlProps } from "../ActivatedControlIcon"
-import { ActivatedBulbLight, DeactivatedBulbLight } from "../BulbLight"
-import { ActivatedSpeaker, DeactivatedSpeaker } from "../Speaker"
+import { withActivatedControlIcon, ActivatedControlProps } from "./ActivatedControlIcon"
+import { ActivatedBulbLight, DeactivatedBulbLight } from "./BulbLight"
+import { ActivatedSpeaker, DeactivatedSpeaker } from "./Speaker"
 
 export interface ActivatedControlIconFactoryProps extends ActivatedControlProps {
   iconType: string,
