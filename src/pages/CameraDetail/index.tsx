@@ -1,17 +1,19 @@
 // import { useParams } from "react-router-dom"
-
 import { useState } from "react";
-// import { BulbLight } from "../../components/BulbLight";
+import { useAppSelector, useAppDispatch } from '../../model/hooks'
 import { ActivatedControlIconFactory } from "../../components/ActivatedControlIconFactory";
 import { JoystickControl } from "../../components/JoystickControl";
 import { ZoomControl } from "../../components/ZoomControl";
+import { toggle } from "../../viewModel/switchCameraLight"
+import { } from "../../viewModel/switchCameraSpeaker"
 
 export function CameraDetail() {
-  // TODO: Send this logic to a global state management
-  const [isBulbLightActivated, setIsBulbLightActivated] = useState(false)
+  const toggleSelector = useAppSelector((state) => state.isOn)
+
+  const dispatch = useAppDispatch()
 
   const onClickHandlerForBulbLight = () => {
-    setIsBulbLightActivated(!isBulbLightActivated)
+    dispatch(toggle())
   }
 
   const [isSpeakerActivated, setIsSpeakerActivated] = useState(false)
@@ -26,7 +28,7 @@ export function CameraDetail() {
       <div id="control-pane" className="flex relative w-full h-96">
         <div className="absolute left-6 top-6"><ActivatedControlIconFactory
           iconType="bulb-light"
-          isActivated={isBulbLightActivated}
+          isActivated={toggleSelector}
           onClick={onClickHandlerForBulbLight} /></div>
         <div className="absolute right-6 top-6"><ActivatedControlIconFactory
           iconType="speaker"
