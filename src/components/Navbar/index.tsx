@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom"
+import { LoginButton } from "../Login"
+import { LogoutButton } from "../Logout"
+import { useAuth0 } from "@auth0/auth0-react"
 
 export interface MenuProps {
   className: string | undefined
@@ -6,6 +9,12 @@ export interface MenuProps {
 }
 
 const Menu = ({ className, isMobile }: MenuProps) => {
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
+
   const liClassName = isMobile ? "flex justify-center w-full py-4 hover:bg-[202020] hover:text-zinc-600" : ""
 
   return (
@@ -14,7 +23,7 @@ const Menu = ({ className, isMobile }: MenuProps) => {
         <div className="w-6 h-1 rotate-45 absolute bg-[#252525]"></div>
         <div className="w-6 h-1 -rotate-45 absolute bg-[#252525]"></div>
       </div> : null}
-      <a className={liClassName} href={"/"}>Signin</a>
+      {isAuthenticated && user ? <LogoutButton className={liClassName} /> : <LoginButton className={liClassName} />}
     </ul>
   )
 }

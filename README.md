@@ -54,3 +54,7 @@ export default tseslint.config({
 https://dribbble.com/shots/24040129-Home-Security-System-App
 https://dribbble.com/shots/23303853-LightCam-Smart-Home-Security-App
 https://dribbble.com/shots/24120840-IoT-Smart-Home-Security-App-Design
+
+## OAUTH Providers
+
+https://www.descope.com/
