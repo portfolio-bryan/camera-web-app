@@ -1,4 +1,5 @@
 export const envs = {
   DOMAIN: "",
-  CLIENT_ID: ""
+  CLIENT_ID: "",
+  GRAPHQL_URI: "http://localhost:8080/graphql",
 }
